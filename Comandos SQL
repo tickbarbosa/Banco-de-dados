@@ -1,0 +1,28 @@
+select * from cliente;
+---------------------------------------------------
+select * from cliente
+where id=37;
+---------------------------------------------------
+select * from cliente
+where país='france';
+---------------------------------------------------
+select * from cliente
+where país<>'france' AND país<>'uk';
+---------------------------------------------------
+select * from cliente
+where id between 5 and 10;
+---------------------------------------------------
+select * FROM cliente
+where NomeCliente like '%e%';
+---------------------------------------------------
+select * FROM cliente
+where país IN('Mexico', 'France', 'Germany');
+----------------------------------------------------
+select País from cliente
+where NOT País='Germany' and NOT País='Mexico';
+----------------------------------------------------------
+select * FROM cliente
+where país='Germany' AND(CIDADE='Munchen' OR cidade='Aachen');
+--------------------------------------------------------------
+select * from cliente
+ORDER BY país, cidade;
